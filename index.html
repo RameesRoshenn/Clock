@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+
+    
+    
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div id="clock" class="dclock">
+                    
+
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function getTime(){
+        const time =new Data()
+    
+    console.log(time);
+    let hours =time.getHours()
+    console.log(hours);
+    let min =time.getMinutes()
+    console.log(min);
+    let sec =time.getSeconds()
+    console.log(sec);
+
+    
+    clock.innerHTML= `${hours}:${min}:${sec}`
+    setTimeout(()=>{getTime()},1000)
+    }
+    
+    getTime()
+</script> 
+</html>
